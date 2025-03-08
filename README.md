@@ -1,69 +1,78 @@
-# Welcome to your Lovable project
 
-## Project info
+# Joi - AI Cyber Assistant
 
-**URL**: https://lovable.dev/projects/e2a71a9c-540f-487a-a9dd-7050e167a0d4
+A futuristic, cyberpunk-inspired AI desktop assistant with voice and text interactions.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- 💬 Voice and text-based AI assistant
+- 🔐 User authentication system
+- 🎨 Cyberpunk-inspired UI with animations and effects
+- 📱 Responsive design for all devices
+- 🔍 Search history tracking
+- 💻 System monitoring dashboard
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e2a71a9c-540f-487a-a9dd-7050e167a0d4) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v14.0.0 or higher)
+- npm or yarn
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/joi-cyber-assistant.git
+cd joi-cyber-assistant
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and visit http://localhost:8080
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+### Voice Commands
 
-This project is built with .
+Press Ctrl+X or click the microphone button to activate voice commands. Some example commands:
 
-- Vite
-- TypeScript
+- "What time is it?"
+- "Show me the weather forecast"
+- "Open my calendar"
+
+### Text Commands
+
+Type your query in the chat input box and press Enter or click the Send button.
+
+## Future Enhancements
+
+- Integration with OpenAI API for more advanced AI capabilities
+- Electron.js packaging for desktop applications
+- System command execution
+- Backend database for user data storage
+
+## Technologies Used
+
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
+- Shadcn UI Components
+- React Query
+- React Router
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/e2a71a9c-540f-487a-a9dd-7050e167a0d4) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project is licensed under the MIT License - see the LICENSE file for details.
