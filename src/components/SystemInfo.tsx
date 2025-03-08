@@ -1,5 +1,5 @@
 
-import { CpuIcon, HardDrive, Memory, Shield } from "lucide-react";
+import { CpuIcon, HardDrive, MemoryStick, Shield } from "lucide-react";
 
 const SystemInfo = () => {
   return (
@@ -28,7 +28,7 @@ const SystemInfo = () => {
         
         <div className="cyber-panel p-3">
           <div className="flex items-center mb-2">
-            <Memory className="h-4 w-4 text-cyber-teal mr-2" />
+            <MemoryStick className="h-4 w-4 text-cyber-teal mr-2" />
             <span className="text-sm text-cyber-text-dim">MEMORY</span>
           </div>
           <div className="h-2 bg-cyber-bg-dark rounded overflow-hidden">
