@@ -33,6 +33,28 @@ const ChatInterface = () => {
     scrollToBottom();
   }, [messages]);
   
+  // Listen for voice activation command from Electron (Ctrl+X)
+  useEffect(() => {
+    // Check if running in Electron
+    if (window.electron) {
+      window.electron.receive('activate-voice', () => {
+        toggleVoiceInput();
+      });
+    }
+    
+    // Global keyboard shortcut for voice activation in browser mode
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.key === 'x') {
+        toggleVoiceInput();
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isVoiceActive]); // depend on isVoiceActive so toggleVoiceInput gets the latest state
+  
   const handleSendMessage = () => {
     if (inputValue.trim() === '') return;
     
